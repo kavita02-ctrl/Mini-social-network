@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-I/usr/include",
+                "-I/usr/include/boost",
+                "social.cpp",
+                "-o",
+                "social",
+                "-lboost_graph"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Generated task by VS Code"
+        }
+    ]
+}
